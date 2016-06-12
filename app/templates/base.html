@@ -1,0 +1,14 @@
+<html>
+	<head>
+		{% if title %}
+		<title>{{ title }} - overStat Compare Tool</title>
+		{% else %}
+		<title>Welcome to overStat</title>
+		{% endif %}
+	</head>
+	<body>
+		<div>overStat: <a href="/index">Home</a></div>
+		<hr>
+		{% block content %}{% endblock %}
+	</body>
+</html>
